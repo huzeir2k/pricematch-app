@@ -1,0 +1,53 @@
+# Ignore node modules
+node_modules/
+
+# Ignore environment files (sensitive information)
+.env
+.env.*
+
+# Ignore log files
+*.log
+
+# Ignore build outputs
+/dist/
+/build/
+
+# Ignore coverage reports
+coverage/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore Sentry and certificate files
+*.crt
+*.pem
+*.key
+
+# Ignore PKPass and wallet files
+*.pkpass
+
+# Ignore temporary files
+*.tmp
+*.swp
+
+# Ignore IDE/editor files
+.vscode/
+.idea/
+
+# Ignore test output
+__pycache__/
+
+# Ignore database dumps
+*.sqlite
+*.db
+*.bak
+
+# Ignore uploads
+uploads/
+
+# Ignore secrets
+secrets/
+
+# Ignore any files containing credentials
+credentials/

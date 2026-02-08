@@ -1,0 +1,46 @@
+{
+  "name": "pricematch-backend",
+  "version": "1.0.0",
+  "description": "PriceMatch - Grocery deal scraper and notification backend",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "seed": "node src/scripts/seedDatabase.js",
+    "test": "jest --detectOpenHandles",
+    "lint": "eslint src/",
+    "scrape:food-basics": "node src/scripts/scrapeFoodBasics.js"
+  },
+  "keywords": ["grocery", "deals", "scraper", "notifications"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.0.0",
+    "dotenv": "^16.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "bcryptjs": "^2.4.3",
+    "helmet": "^7.1.0",
+    "express-rate-limit": "^7.1.5",
+    "express-async-errors": "^3.1.1",
+    "joi": "^17.11.0",
+    "nodemailer": "^6.9.7",
+    "@sentry/node": "^7.84.0",
+    "node-cron": "^3.0.3",
+    "cheerio": "1.0.0-rc.12",
+    "pdf-parse": "^1.1.1",
+    "axios": "^1.6.2",
+    "cors": "^2.8.5",
+    "nodemon": "^3.0.1",
+    "jszip": "^3.10.1",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "eslint": "^8.54.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
